@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts - WitSyurp&#39;s Blog</title>
+    <link>https://witsyurp.github.io/posts/</link>
+    <description>Recent content in Posts on WitSyurp&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-ch</language>
+    <lastBuildDate>Wed, 19 Dec 2018 10:35:35 -0500</lastBuildDate>
+    
+        <atom:link href="https://witsyurp.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo-aether文章模板的使用方法</title>
+      <link>https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Wed, 19 Dec 2018 10:35:35 -0500</pubDate>
+      
+      <guid>https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>aether主题与Hugo模板相结合，可以轻松地将标记写入功能强大的网页。KaTeX、Highlight.js和Hugo可以提供创建数学符号、方程式、突出显示的代码、表、列表等功能。下面的特性：第一行是标记，第二行是Hugo、KaTeX和Highlight.js处理标记后的结果。您可以在文档中找到更多功能。</description>
+    </item><item>
+      <title>高效、干净的aether主题</title>
+      <link>https://witsyurp.github.io/posts/aether-theme/</link>
+      <pubDate>Wed, 02 May 2018 14:33:42 -0400</pubDate>
+      
+      <guid>https://witsyurp.github.io/posts/aether-theme/</guid>
+      <description> 《Aether》是Hugo的新主题，强调运动、材质和深度作为设计元素。让人分心的样式和页面元素不再干扰于内容。</description>
+    </item><item>
+      <title>Creating a New Theme</title>
+      <link>https://witsyurp.github.io/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://witsyurp.github.io/posts/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+  </channel>
+</rss>

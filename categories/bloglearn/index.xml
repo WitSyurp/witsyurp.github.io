@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BlogLearn - WitSyurp&#39;s Blog</title>
+    <link>https://witsyurp.github.io/categories/bloglearn/</link>
+    <description>Recent content in BlogLearn on WitSyurp&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-ch</language>
+    <lastBuildDate>Wed, 02 May 2018 14:33:42 -0400</lastBuildDate>
+    
+        <atom:link href="https://witsyurp.github.io/categories/bloglearn/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>高效、干净的aether主题</title>
+      <link>https://witsyurp.github.io/posts/aether-theme/</link>
+      <pubDate>Wed, 02 May 2018 14:33:42 -0400</pubDate>
+      
+      <guid>https://witsyurp.github.io/posts/aether-theme/</guid>
+      <description> 《Aether》是Hugo的新主题，强调运动、材质和深度作为设计元素。让人分心的样式和页面元素不再干扰于内容。</description>
+    </item>
+  </channel>
+</rss>

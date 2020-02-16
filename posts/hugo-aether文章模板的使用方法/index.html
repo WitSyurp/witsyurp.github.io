@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-ch" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hugo-aether文章模板的使用方法 &middot; WitSyurp&#39;s Blog</title>
+  <meta name="description" content="aether主题与Hugo模板相结合，可以轻松地将标记写入功能强大的网页。KaTeX、Highlight.js和Hugo可以提供创建数学符号、方程式、突出显示的代码、表、列表等功能。下面的特性：第一行是标记，第二行是Hugo、KaTeX和Highlight.js处理标记后的结果。您可以在文档中找到更多功能。" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  
+  <link href="https://witsyurp.github.io/css/concated.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background: #ecedef url("https://witsyurp.github.io/img/ignasi_pattern_s.png") repeat;
+    }
+  </style>
+<link rel="apple-touch-icon" sizes="180x180" href="https://witsyurp.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://witsyurp.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://witsyurp.github.io/favicon-16x16.png">
+<link rel="manifest" href="https://witsyurp.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://witsyurp.github.io/sfari-pinned-tab.svg" color="#ff9700">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://witsyurp.github.io/" class="nav-text">WitSyurp</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://witsyurp.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://witsyurp.github.io/about/" class="hamburger-menu-overlay-link">About Hugo</a></li>
+      
+      <li><a href="https://witsyurp.github.io/categories/bloglearn/" class="hamburger-menu-overlay-link">BlogLearn</a></li>
+      
+      <li><a href="https://witsyurp.github.io/categories/development/" class="hamburger-menu-overlay-link">Development</a></li>
+      
+      <li><a href="https://witsyurp.github.io/categories/features/" class="hamburger-menu-overlay-link">Features</a></li>
+      
+      <li><a href="https://witsyurp.github.io/categories/golang/" class="hamburger-menu-overlay-link">golang</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post ">
+        <header class="post-header">
+        	<h1 class="post-title">Hugo-aether文章模板的使用方法</h1>
+          <p class="post-date">Posted <time datetime="2018-12-19">Dec 19, 2018</time></p>
+        </header>
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_800x0_resize_q75_lanczos.jpg">
+          <img src="https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_800x0_resize_q75_lanczos.jpg" >
+        </picture>
+        
+        <p>aether主题与Hugo模板相结合，可以轻松地将标记写入功能强大的网页。KaTeX、Highlight.js和Hugo可以提供创建数学符号、方程式、突出显示的代码、表、列表等功能。</p>
+<p>下面的特性：第一行是标记，第二行是Hugo、KaTeX和Highlight.js处理标记后的结果。您可以在文档中找到更多功能。</p>
+<h2 id="带katex的latex格式数学排版">带KaTeX的LaTeX格式数学排版</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">{{&lt; raw &gt;}}
+\[u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau) d\tau + K_d \frac{de(t)}{dt} \]
+{{&lt; /raw &gt;}}
+</code></pre></div>
+\[u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau) d\tau + K_d \frac{de(t)}{dt} \]
+
+<h2 id="代码支持多种编程语言和格式">代码（支持多种编程语言和格式）</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">```javascript
+var s = &#34;JavaScript syntax highlighting&#34;;
+alert(s);
+```
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript syntax highlighting&#34;</span>;
+<span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">s</span>);
+</code></pre></div><h2 id="内联代码">内联代码</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">Here is <span style="color:#e6db74">`var s = &#34;Hello World&#34;`</span> inline code
+</code></pre></div><p>Here is <code>var s = &quot;Hello World&quot;</code> inline code</p>
+<h2 id="数据表">数据表</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+</code></pre></div><table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="有序列表">有序列表</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#66d9ef">1.</span> Number one
+<span style="color:#66d9ef">2.</span> Number Two
+    <span style="color:#66d9ef">1.</span> Indented Number 1
+    <span style="color:#66d9ef">2.</span> Indented Number 2
+</code></pre></div><ol>
+<li>Number one</li>
+<li>Number Two
+<ol>
+<li>Indented Number 1</li>
+<li>Indented Number 2</li>
+</ol>
+</li>
+</ol>
+<h2 id="无序列表">无序列表</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#66d9ef">*</span> Get groceries at Harris Teeter before the party
+<span style="color:#66d9ef">*</span> Get a Spider Man cake
+    <span style="color:#66d9ef">*</span> Chocolate or marble
+    <span style="color:#66d9ef">*</span> Whipped cream frosting
+<span style="color:#66d9ef">*</span> Don&#39;t forget to walk the dog before you leave
+<span style="color:#66d9ef">*</span> Bring lots of plates and silverware so that we don&#39;t run out
+    <span style="color:#66d9ef">*</span> Plastic Dixie brand is fine
+</code></pre></div><ul>
+<li>Get groceries at Harris Teeter before the party</li>
+<li>Get a Spider Man cake
+<ul>
+<li>Chocolate or marble</li>
+<li>Whipped cream frosting</li>
+</ul>
+</li>
+<li>Don&rsquo;t forget to walk the dog before you leave</li>
+<li>Bring lots of plates and silverware so that we don&rsquo;t run out
+<ul>
+<li>Plastic Dixie brand is fine</li>
+</ul>
+</li>
+</ul>
+<h2 id="评论">评论</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">This is some text that should show up as a comment. Someone may have made this comment but i&#39;m not sure.
+</span></code></pre></div><blockquote>
+<p>This is some text that should show up as a comment. Someone may have made this comment but i&rsquo;m not sure.</p>
+</blockquote>
+<h2 id="图片">图片</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">![<span style="color:#f92672">NYC Skyline</span>](<span style="color:#a6e22e">/post/aether-features/mdd-iphone.jpg</span>)
+</code></pre></div><p><img src="https://witsyurp.github.io/post/aether-features/mdd-iphone.jpg" alt="NYC Skyline"></p>
+<h2 id="小图像">小图像</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">{{&lt; smallimg src=&#34;featuredImage&#34; alt=&#34;NYC Skyline&#34; smartfloat=&#34;left&#34; width=&#34;250px&#34; &gt;}}
+</code></pre></div><picture class="small-pic ">
+    
+    
+    
+        
+        
+        <source srcset="https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_250x0_resize_q75_lanczos.jpg">
+        <img src="https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_250x0_resize_q75_lanczos.jpg" class="small-img smartfloat-left" alt="aether theme displayed on an iPhone"  style="width: 250px;"/>
+    
+</picture>
+<p>此图像浮动到本段左侧，宽度为250px。其长宽比保持不变，因此不会拉伸。图为纽约天际线。可以看到设计是如何响应的，以及卡片是如何智能地适合显示的。使用flexbox和css网格，像bootstrap这样的重框架不需要创建漂亮的响应设计。aether使用flexbox将桌面右侧的图像更改为移动端顶部的图像。</p>
+<h2 id="链接">链接</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">[<span style="color:#f92672">Aether&#39;s Github page</span>](<span style="color:#a6e22e">https://github.com/josephhutch/aether</span>)
+</code></pre></div><p><a href="https://github.com/josephhutch/aether">Aether&rsquo;s Github page</a></p>
+
+      </article>
+      
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://witsyurp.github.io/posts/aether-theme/" class="card blog-card" rel="bookmark" >
+  
+  <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
+    <picture>
+      
+      <source srcset="https://witsyurp.github.io/posts/aether-theme/mdd-macbook.jpg">
+      <img src="https://witsyurp.github.io/posts/aether-theme/mdd-macbook.jpg" class="card-img" alt="A MacBook showing a website using the aether theme">
+    </picture>
+  </div>
+  
+  <article class="card-body">
+    <h2 class="card-title">高效、干净的aether主题</h2>
+    <p class="card-text"> 《Aether》是Hugo的新主题，强调运动、材质和深度作为设计元素。让人分心的样式和页面元素不再干扰于内容。</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2018-05-02 52:00">May 2, 2018</time></p>
+      <p>#BlogLearn </p>
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://witsyurp.github.io/" class="card home-card" style="background-image: url( https://witsyurp.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://witsyurp.github.io/js/core.min.js"></script>
+
+  </body>
+</html>

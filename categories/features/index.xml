@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features - WitSyurp&#39;s Blog</title>
+    <link>https://witsyurp.github.io/categories/features/</link>
+    <description>Recent content in Features on WitSyurp&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-ch</language>
+    <lastBuildDate>Wed, 19 Dec 2018 10:35:35 -0500</lastBuildDate>
+    
+        <atom:link href="https://witsyurp.github.io/categories/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo-aether文章模板的使用方法</title>
+      <link>https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Wed, 19 Dec 2018 10:35:35 -0500</pubDate>
+      
+      <guid>https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>aether主题与Hugo模板相结合，可以轻松地将标记写入功能强大的网页。KaTeX、Highlight.js和Hugo可以提供创建数学符号、方程式、突出显示的代码、表、列表等功能。下面的特性：第一行是标记，第二行是Hugo、KaTeX和Highlight.js处理标记后的结果。您可以在文档中找到更多功能。</description>
+    </item>
+  </channel>
+</rss>

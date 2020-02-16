@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-ch" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>高效、干净的aether主题 &middot; WitSyurp&#39;s Blog</title>
+  <meta name="description" content=" 《Aether》是Hugo的新主题，强调运动、材质和深度作为设计元素。让人分心的样式和页面元素不再干扰于内容。" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  
+  <link href="https://witsyurp.github.io/css/concated.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background: #ecedef url("https://witsyurp.github.io/img/ignasi_pattern_s.png") repeat;
+    }
+  </style>
+<link rel="apple-touch-icon" sizes="180x180" href="https://witsyurp.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://witsyurp.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://witsyurp.github.io/favicon-16x16.png">
+<link rel="manifest" href="https://witsyurp.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://witsyurp.github.io/sfari-pinned-tab.svg" color="#ff9700">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://witsyurp.github.io/" class="nav-text">WitSyurp</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://witsyurp.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://witsyurp.github.io/about/" class="hamburger-menu-overlay-link">About Hugo</a></li>
+      
+      <li><a href="https://witsyurp.github.io/categories/bloglearn/" class="hamburger-menu-overlay-link">BlogLearn</a></li>
+      
+      <li><a href="https://witsyurp.github.io/categories/development/" class="hamburger-menu-overlay-link">Development</a></li>
+      
+      <li><a href="https://witsyurp.github.io/categories/features/" class="hamburger-menu-overlay-link">Features</a></li>
+      
+      <li><a href="https://witsyurp.github.io/categories/golang/" class="hamburger-menu-overlay-link">golang</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+        	<h1 class="post-title">高效、干净的aether主题</h1>
+          <p class="post-date">Posted <time datetime="2018-05-02">May 2, 2018</time></p>
+        </header>
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://witsyurp.github.io/posts/aether-theme/mdd-macbook_hu52943d9d8af2e9940e7ffd12ce76fba4_564068_800x0_resize_q75_lanczos.jpg">
+          <img src="https://witsyurp.github.io/posts/aether-theme/mdd-macbook_hu52943d9d8af2e9940e7ffd12ce76fba4_564068_800x0_resize_q75_lanczos.jpg" alt="A MacBook showing a website using the aether theme">
+        </picture>
+        
+        <p>如今的网络是一个令人沮丧的混乱弹出窗口，侵入性横幅和广告阻碍妨碍浏览内容。aether的设计，摆脱了这些干扰，只是突出内容。网页感觉更像是一个本机应用程序，而不是一个网站。互动是直观的，内容是焦点，干扰被省略。</p>
+<p>Aether 是一个Hugo主题的博客，为良好的写作和摄影提高了生产力。如果你用Hugo作为你的博客，请试试看。</p>
+<h2 id="安装">安装</h2>
+<p>在 Hugo 项目的根目录中，将 aether repo 克隆到主题目录中。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/josephhutch/aether.git themes/aether
+</code></pre></div><h2 id="使用">使用</h2>
+<h3 id="网站配置">网站配置</h3>
+<p>如果以下参数尚未存在，请将其添加到配置文件congfig.toml中。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://yourwebsitenamegoeshere.com&#34;</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;your language code&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;your website title&#34;</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;aether&#34;</span>
+<span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;Your google analytics tracking ID&#34;</span>
+
+[<span style="color:#a6e22e">params</span>]
+<span style="color:#a6e22e">brand</span> = <span style="color:#e6db74">&#34;the title displayed in the nav bar - optional&#34;</span>
+<span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;your website&#39;s description&#34;</span>
+<span style="color:#a6e22e">homeimg</span> = <span style="color:#e6db74">&#34;url to the image used for the home button - optional&#34;</span>
+<span style="color:#a6e22e">bgimg</span> = <span style="color:#e6db74">&#34;url to the image used for the background - optional&#34;</span>
+</code></pre></div><p><code>title</code>参数用于每个页面标题，即搜索引擎在搜索结果中显示的标题。如果希望页面左上角显示的标题与页面标题不同，请使用<code>brand</code>参数。例如，我的站点的<code>title</code>参数是<code>Joe Hutchinson</code>，但是<code>brand</code>参数设置为<code>joehutch</code>。</p>
+<p><code>homeimg</code>和<code>bgimg</code>参数使您能够进一步自定义站点的外观。<code>homeimg</code>参数是用于每页底部<code>home</code>按钮的图像。由于“主页”按钮上使用的文本为白色，因此首选较暗的背景图像。如果未指定<code>homeimg</code>参数，则使用回退映像。类似地，<code>bgimg</code>参数用于每个网页的背景。aether的设计，以一个微妙的平铺图像为背景，看起来最好。如果未指定背景图像，则背景将为纯色。</p>
+<p>这是站点级别所需的唯一配置！你现在可以开始为你的网站写内容了。</p>
+<h3 id="创建内容">创建内容</h3>
+<p>在shell中执行<code>hugo new posts/postnamehere/index.md</code>，创建一篇新的博客文章。在新的标记文件的顶部，是所谓的前端问题。最重要的是页面的元数据，它决定了Hugo和aether如何为您的文章生成HTML。下面你可以找到一个新的帖子的头条应该包含什么，以及每个参数的含义。</p>
+<pre><code class="language-properties" data-lang="properties">---
+title: &quot;文章的标题&quot;
+date: 生成帖子的日期
+description: &quot;帖子说明（显示在帖子卡片中）&quot;
+categories: [&quot;在此处添加逗号分隔的类别”，“其他类别&quot;]
+featuredImage: &quot;页面特色图片的url&quot;
+featuredImageDescription: &quot;功能图像的说明，用作alt文本&quot;
+dropCap: 如果第一个字母应该是一个大的装饰大写字母(true, false)
+displayInMenu: 如果希望导航菜单中列出文章(true, false)
+displayInList:如果希望文章列在主页和分类页面上 (true, false)
+draft: 如果希望页面是草稿 (true, false)
+---
+</code></pre><p><code>displayInMenu</code>和<code>displayInList</code>参数用于确定内容的显示位置。文章通常将<code>displayInMenu</code>设置为<code>false</code>，以便文章不是菜单选项，而<code>displayInList</code>设置为<code>true</code>，以便它显示在主页的文章列表和在分页列表中。另一方面，<code>About Me</code>页面将<code>displayInMenu</code>设置为<code>true</code>，<code>displayInList</code>设置为<code>false</code>。这将允许从菜单访问<code>About Me</code>页面，但不显示在主页的帖子列表中。</p>
+<p><code>categories</code>参数用于对类别页中的类似文章进行分组。类别页面可以从菜单中访问，并列出具有相同类别的所有文章。</p>
+<p><code>dropCap</code>参数用于确定文章的第一个字母是否应该是大写字母。落下的大写字母是书或章节开头的大装饰字母。</p>
+<p>在每一篇文章中添加一个有趣的描述和一个好的图片，从这个主题中获得最大的价值。</p>
+<p>Aether利用[页面捆绑包]（https://gohugo.io/content-management/page-bundles/）为您的站点优化图像。这可能需要您更新内容的结构，另请参见[内容组织]（https://gohugo.io/content management/organization/）。使用<code>image</code>和<code>smallimg</code>快捷方式充分利用图像优化。</p>
+<p>帖子用标记和<code>LaTeX</code>格式书写（用于数学符号和方程式）。你可以在网上找到大量关于如何用标记和<code>LaTeX</code>格式完善你的文章的信息。</p>
+<h3 id="进一步定制">进一步定制</h3>
+<p>若要更改列表页顶部的标题和子文本，只需在生成列表页的文件夹中添加一个_<code>index.md</code>文件。 例如，要更改主页顶部的标题，请使用以下参数向内容文件夹中添加一个 _<code>index.md</code>文件。</p>
+<pre><code class="language-属性" data-lang="属性">---
+title: &quot;可以包含大写字母的标题&quot;
+date: 日期
+description: &quot;这是主标题上方的潜台词，用小写字母表示&quot;
+---
+</code></pre><h3 id="学习更多">学习更多</h3>
+<p>想要学习更多关于aether主题的内容, 请访问 <a href="https://github.com/josephhutch/aether">aether&rsquo;s Github page</a>. To 想要学习更多关于Hugo框架的内容, 请访问  <a href="https://gohugo.io/">Hugo&rsquo;s website</a>.</p>
+
+      </article>
+      
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://witsyurp.github.io/posts/creating-a-new-theme/" class="card blog-card" rel="bookmark" >
+  
+  <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
+    <picture>
+      
+      <source srcset="https://witsyurp.github.io/posts/creating-a-new-theme/nyc.jpg">
+      <img src="https://witsyurp.github.io/posts/creating-a-new-theme/nyc.jpg" class="card-img" >
+    </picture>
+  </div>
+  
+  <article class="card-body">
+    <h2 class="card-title">Creating a New Theme</h2>
+    <p class="card-text">Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
+We&rsquo;ll start with creating a new site with a very basic template.</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2014-09-28 928:00">Sep 28, 2014</time></p>
+      
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://witsyurp.github.io/" class="card home-card" style="background-image: url( https://witsyurp.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://witsyurp.github.io/js/core.min.js"></script>
+
+  </body>
+</html>

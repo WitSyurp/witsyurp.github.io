@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>糖浆的博客 - WitSyurp&#39;s Blog</title>
+    <link>https://witsyurp.github.io/</link>
+    <description>Recent content in 糖浆的博客 on WitSyurp&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-ch</language>
+    <lastBuildDate>Fri, 27 Apr 2018 09:46:15 -0400</lastBuildDate>
+    
+        <atom:link href="https://witsyurp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>https://witsyurp.github.io/posts/</link>
+      <pubDate>Wed, 19 Dec 2018 10:35:35 -0500</pubDate>
+      
+      <guid>https://witsyurp.github.io/posts/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
