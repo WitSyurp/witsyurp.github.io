@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Posts &middot; WitSyurp&#39;s Blog</title>
-  <meta name="description" content="" />
+  <title>解决win10应用商店加载或下载卡顿  &middot; WitSyurp&#39;s Blog</title>
+  <meta name="description" content="最近学习搭建博客经常要去外网，翻译就是个头疼的问题。想去WIN10商店里下载个IE翻译插件，又遇到了页面卡顿无法加载等问题......我通过网络搜集并整合出了这个办法，希望对你也有帮助。" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
@@ -14,7 +14,6 @@
   
   
   <link href="https://witsyurp.github.io/css/concated.min.css" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" href="https://witsyurp.github.io/posts/index.xml" title="WitSyurp's Blog" />
   
   <style>
     body {
@@ -30,7 +29,7 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 
-  <body class="list-body">
+  <body class="single-body">
     <nav class="nav-bar side-padding">
   <h1 class="nav-header"><a href="https://witsyurp.github.io/" class="nav-text">WitSyurp</a></h1>
   <div class="hamburger-menu">
@@ -55,76 +54,63 @@
   </div>
 </nav>
 
-    <main class="card-container side-gutter">
-      <header class="list-header">
-        <h1 class="list-header-title">Posts</h1>
+    <main class="content side-text-padding">
+      <article class="post ">
+        <header class="post-header">
+        	<h1 class="post-title">解决win10应用商店加载或下载卡顿 </h1>
+          <p class="post-date">Posted <time datetime="2020-02-17">Feb 17, 2020</time></p>
+        </header>
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://witsyurp.github.io/posts/%E8%A7%A3%E5%86%B3win10%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%8A%A0%E8%BD%BD%E6%88%96%E4%B8%8B%E8%BD%BD%E5%8D%A1%E9%A1%BF/WIN10Market_hu1b48acfa8942bd9a6844b5963c0c9f5f_70546_800x0_resize_lanczos_2.png">
+          <img src="https://witsyurp.github.io/posts/%E8%A7%A3%E5%86%B3win10%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%8A%A0%E8%BD%BD%E6%88%96%E4%B8%8B%E8%BD%BD%E5%8D%A1%E9%A1%BF/WIN10Market_hu1b48acfa8942bd9a6844b5963c0c9f5f_70546_800x0_resize_lanczos_2.png" >
+        </picture>
         
-      </header>
+        <h2 id="原理">原理</h2>
+<p>通过更换更稳定DNS解决网络卡顿</p>
+<h2 id="方法">方法</h2>
+<p>桌面右下角网络图标右击</p>
+<p><code>“打开网络和Internet选项”</code></p>
+<p><code>更改适配器选项</code></p>
+<p>现连接的网络右击</p>
+<p>双击属性<code>Internet协议版本 4（TCP/IPv4）</code></p>
+<p><code>IP地址</code>选择自动获取</p>
+<p><code>DNS服务器</code>手动</p>
+<p>首选：114.114.114.114</p>
+<p>备用：4.2.2.2</p>
+
+      </article>
       
-      
+    </main>
+    <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://witsyurp.github.io/posts/%E8%A7%A3%E5%86%B3win10%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%8A%A0%E8%BD%BD%E6%88%96%E4%B8%8B%E8%BD%BD%E5%8D%A1%E9%A1%BF/" class="card blog-card" rel="bookmark" >
-  
-  <div class="card-img-container">
-    <picture>
-      
-      
-      <source srcset="https://witsyurp.github.io/posts/%E8%A7%A3%E5%86%B3win10%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%8A%A0%E8%BD%BD%E6%88%96%E4%B8%8B%E8%BD%BD%E5%8D%A1%E9%A1%BF/WIN10Market_hu1b48acfa8942bd9a6844b5963c0c9f5f_70546_400x300_fit_lanczos_2.png">
-      <img src="https://witsyurp.github.io/posts/%E8%A7%A3%E5%86%B3win10%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E5%8A%A0%E8%BD%BD%E6%88%96%E4%B8%8B%E8%BD%BD%E5%8D%A1%E9%A1%BF/WIN10Market_hu1b48acfa8942bd9a6844b5963c0c9f5f_70546_400x300_fit_lanczos_2.png" class="card-img" >
-    </picture>
-  </div>
-  <article class="card-body">
-    <h2 class="card-title">解决win10应用商店加载或下载卡顿 </h2>
-    <p class="card-text">最近学习搭建博客经常要去外网，翻译就是个头疼的问题。想去WIN10商店里下载个IE翻译插件，又遇到了页面卡顿无法加载等问题......我通过网络搜集并整合出了这个办法，希望对你也有帮助。</p>
-    <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2020-02-17">Feb 17, 2020</time></p>
-      <p>#Features </p>
-    </div>
-  </article>
-</a><a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
   href="https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="card blog-card" rel="bookmark" >
   
   <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
     <picture>
       
-      
-      <source srcset="https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_400x300_fit_q75_lanczos.jpg">
-      <img src="https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_400x300_fit_q75_lanczos.jpg" class="card-img" >
+      <source srcset="https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/mdd-iphone.jpg">
+      <img src="https://witsyurp.github.io/posts/hugo-aether%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/mdd-iphone.jpg" class="card-img" >
     </picture>
   </div>
+  
   <article class="card-body">
     <h2 class="card-title">Hugo-aether文章模板的使用方法</h2>
     <p class="card-text">aether主题与Hugo模板相结合，可以轻松地将标记写入功能强大的网页。KaTeX、Highlight.js和Hugo可以提供创建数学符号、方程式、突出显示的代码、表、列表等功能。下面的特性：第一行是标记，第二行是Hugo、KaTeX和Highlight.js处理标记后的结果。您可以在文档中找到更多功能。</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2020-02-15">Feb 15, 2020</time></p>
+      <p>Posted <time datetime="2020-02-15 215:00">Feb 15, 2020</time></p>
       <p>#Features </p>
     </div>
   </article>
-</a><a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://witsyurp.github.io/posts/aether-theme/" class="card blog-card" rel="bookmark" >
-  
-  <div class="card-img-container">
-    <picture>
-      
-      
-      <source srcset="https://witsyurp.github.io/posts/aether-theme/mdd-macbook_hu52943d9d8af2e9940e7ffd12ce76fba4_564068_400x300_fit_q75_lanczos.jpg">
-      <img src="https://witsyurp.github.io/posts/aether-theme/mdd-macbook_hu52943d9d8af2e9940e7ffd12ce76fba4_564068_400x300_fit_q75_lanczos.jpg" class="card-img" alt="A MacBook showing a website using the aether theme">
-    </picture>
-  </div>
-  <article class="card-body">
-    <h2 class="card-title">高效、干净的aether主题</h2>
-    <p class="card-text"> 《Aether》是Hugo的新主题，强调运动、材质和深度作为设计元素。让人分心的样式和页面元素不再干扰于内容。</p>
-    <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2018-05-02">May 2, 2018</time></p>
-      <p>#Bloglearn </p>
-    </div>
-  </article>
 </a>
-    </main>
-    <nav class="pagination-nav side-padding">
       
-      <a href="https://witsyurp.github.io/posts/page/2/" class="pagination-older pagination-text">Older Posts &gt;</a>
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://witsyurp.github.io/" class="card home-card" style="background-image: url( https://witsyurp.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
     </nav>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
